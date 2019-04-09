@@ -14,6 +14,7 @@ const logError = (error) => {
 let getHeadlines = html => {
     data = [];
     const $ = cheerio.load(html);
+    // look at documentation to find out how and what we want to select from the url/html response
     $('h3').each((i, elem) => {
         data.push({
             title: $(elem).text(),
