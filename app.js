@@ -15,7 +15,7 @@ let getHeadlines = html => {
     data = [];
     const $ = cheerio.load(html);
     // look at documentation to find out how and what we want to select from the url/html response
-    $('h3').each((i, elem) => {
+    $(".DY5T1d").each((i, elem) => {
         data.push({
             title: $(elem).text(),
             link: $(elem).find('a.DY5T1d').attr('href')
